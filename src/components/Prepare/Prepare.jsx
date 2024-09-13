@@ -1,30 +1,28 @@
 import PropTypes from "prop-types";
 
-const Prepare = ({ prepared }) => {
-  const { recipe_name, preparing_time, calories } = prepared;
+const Prepare = ({ prepared, handleAddCooking}) => {
+  
+    const { recipe_name, preparing_time, calories } = prepared;
   return (
     <div>
+        
       <div className="overflow-x-auto">
-        <table className="table">
+        <table className="table gap-3 my-2">
           {/* head */}
           <thead>
 
             <tr>
-              <th>Name</th>
-              <th>Time</th>
-              <th>Calories</th>
             </tr>
             
           </thead>
-          <tbody>
-            <tr>
-
-              <th></th>
+          <tbody className="">
+            <tr className="text-[16px] text-[#282828B3] ">
               <td>{recipe_name}</td>
               <td>{preparing_time}</td>
               <td>{calories}</td>
               <td>
-                <button className="rounded-full bg-[#0BE58A] text-[#150B2B] text-[18px] px-6 py-[13px] ">
+                <button onClick={()=>handleAddCooking(prepared)}
+                className="rounded-full bg-[#0BE58A] text-[#150B2B] text-[18px] px-6 py-[13px] ">
                   Preparing
                 </button>
               </td>
@@ -39,6 +37,7 @@ const Prepare = ({ prepared }) => {
 
 Prepare.propTypes = {
   prepared: PropTypes.object,
+  handleAddCooking: PropTypes.func
 };
 
 export default Prepare;

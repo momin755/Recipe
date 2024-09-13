@@ -11,24 +11,31 @@ import Recipe from './components/Recipe/Recipe'
 function App() {
   let [recipes, setRecipes] = useState([])
 
+  const [cooking, setCooking] = useState([])
+
   const handleAddReCipe =(cook)=>{
     const newRecipes = [...recipes, cook]
     setRecipes(newRecipes)
+  }
 
-
+  const handleAddCooking =(cooks)=>{
+    const newCooking = [...cooking, cooks]
+    setCooking(newCooking)
   }
   return (
     <>
-    <div className='w-[1240px] mx-auto py-6'>
+    <div className='w-[1250px] mx-auto py-6'>
     <Header></Header>
     <Banner></Banner>
     <Recipe></Recipe>
-    <main className='flex gap-5 my-6'>
+    <main className='flex my-6'>
       <Cooks
       handleAddReCipe={handleAddReCipe}
       ></Cooks>
       <Prepares
       recipes={recipes}
+      cooking={cooking}
+      handleAddCooking={handleAddCooking}
       ></Prepares>
     </main>
     </div>
