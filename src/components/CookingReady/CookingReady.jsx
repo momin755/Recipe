@@ -5,16 +5,18 @@ const CookingReady = ({ cooksReady }) => {
   return (
     <div>
       <div className="overflow-x-auto">
-        <table className="flex justify-between table my-2">
+        <table className="flex justify-between table my-4">
           <tbody className="">
             <tr className="text-[16px] text-[#282828B3] ">
               <td className="pr-12">{recipe_name}</td>
-              <td className="pr-12">{preparing_time}</td>
-              <td>{calories}</td>
+              <td className="pr-12">{preparing_time} min</td>
+              <td>{calories} calories</td>
             </tr>
           </tbody>
         </table>
       </div>
+
+      
     </div>
   );
 };

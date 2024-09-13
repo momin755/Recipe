@@ -13,14 +13,33 @@ function App() {
 
   const [cooking, setCooking] = useState([])
 
+  const [time, setTime] = useState(0)
+
+  const [caloriesCount, setCaloriesCount] = useState(0)
+
   const handleAddReCipe =(cook)=>{
     const newRecipes = [...recipes, cook]
     setRecipes(newRecipes)
   }
 
-  const handleAddCooking =(cooks)=>{
+  const handleAddCooking =(id, cooks, fullTime, caloriesFull)=>{
+
+    // Add Cooking
     const newCooking = [...cooking, cooks]
     setCooking(newCooking)
+
+    // Add and Remove Before Cooking
+    const clickPreparing = recipes.filter(recipe => recipe.id !== id)
+    setRecipes(clickPreparing)
+
+    // Total Time Functionality
+    const totalTime = (parseFloat(fullTime) + time)
+    setTime(totalTime)
+
+    // Total Calories Functionality
+
+    const totalCalories = (parseFloat(caloriesFull) + caloriesCount)
+    setCaloriesCount(totalCalories)
   }
   return (
     <>
@@ -36,6 +55,8 @@ function App() {
       recipes={recipes}
       cooking={cooking}
       handleAddCooking={handleAddCooking}
+      time={time}
+      caloriesCount={caloriesCount}
       ></Prepares>
     </main>
     </div>

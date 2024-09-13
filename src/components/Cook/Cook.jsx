@@ -39,13 +39,13 @@ const Cook = ({ cook, handleAddReCipe }) => {
           <p>
             <IoTimeOutline />{" "}
           </p>
-          <p>{preparing_time}</p>
+          <p>{preparing_time} min</p>
         </div>
         <div className="flex gap-2 place-items-center  text-[#282828CC] text-[16px]">
           <p>
             <FaFire />
           </p>
-          <p>{calories}</p>
+          <p>{calories} calories</p>
         </div>
       </div>
 

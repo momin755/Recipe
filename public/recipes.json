@@ -12,8 +12,8 @@
             "2 cloves garlic, minced",
             "400 g canned tomatoes"
         ],
-        "preparing_time": "45 min",
-        "calories": "600 calories"
+        "preparing_time": "45",
+        "calories": "600"
     },
     {
         "recipe_image": "https://i.ibb.co.com/BL80Kc4/Rectangle-20170.png",
@@ -27,8 +27,8 @@
             "3 cloves garlic, minced",
             "1 tbsp ginger, grated"
         ],
-        "preparing_time": "40 min",
-        "calories": "500 calories"
+        "preparing_time": "40 ",
+        "calories": "500 "
     },
     {
         "recipe_image": "https://i.ibb.co.com/BL80Kc4/Rectangle-20170.png",
@@ -42,8 +42,8 @@
             "1 cup croutons",
             "1 tbsp olive oil"
         ],
-        "preparing_time": "15 min",
-        "calories": "300 calories"
+        "preparing_time": "15",
+        "calories": "300 "
     },
     {
         "recipe_image": "https://i.ibb.co.com/Sx4WNFm/Rectangle-20170-1.png",
@@ -57,8 +57,8 @@
             "1 carrot, julienned",
             "2 tbsp soy sauce"
         ],
-        "preparing_time": "20 min",
-        "calories": "250 calories"
+        "preparing_time": "20 ",
+        "calories": "250 "
     },
     {
         "recipe_image": "https://i.ibb.co.com/Sx4WNFm/Rectangle-20170-1.png",
@@ -72,8 +72,8 @@
             "1/2 tsp salt",
             "1 cup milk"
         ],
-        "preparing_time": "25 min",
-        "calories": "350 calories"
+        "preparing_time": "25 ",
+        "calories": "350 "
     },
     {
         "recipe_image": "https://i.ibb.co.com/BL80Kc4/Rectangle-20170.png",
@@ -87,7 +87,7 @@
             "1/2 cup mixed berries",
             "1 tbsp chia seeds"
         ],
-        "preparing_time": "10 min",
-        "calories": "200 calories"
+        "preparing_time": "10 ",
+        "calories": "200 "
     }
 ]

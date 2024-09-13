@@ -2,7 +2,7 @@ import PropTypes from "prop-types";
 import Prepare from "../Prepare/Prepare";
 import CookingReady from "../CookingReady/CookingReady";
 
-const Prepares = ({ recipes, handleAddCooking, cooking }) => {
+const Prepares = ({ recipes, handleAddCooking, cooking, time, caloriesCount }) => {
   return (
     <div className="w-1/3 p-4 mx-auto shadow-2xl rounded-xl">
       <h1 className="text-center text-[#282828] text-[24px] font-semibold border-b-4 pb-3">
@@ -38,6 +38,15 @@ const Prepares = ({ recipes, handleAddCooking, cooking }) => {
         }
       </div>
 
+      <div className="mt-24 w-[248px] mx-20 flex justify-between">
+        <div>
+          <h1>Total Time = <br /> <b> {time}  minutes</b></h1>
+        </div>
+        <div>
+          <h1>Total Calories = <br /> <b>{caloriesCount}  Calories</b></h1>
+        </div>
+      </div>
+
     </div>
   );
 };
@@ -45,7 +54,9 @@ const Prepares = ({ recipes, handleAddCooking, cooking }) => {
 Prepares.propTypes = {
   recipes: PropTypes.array,
   handleAddCooking: PropTypes.func,
-  cooking: PropTypes.array
+  cooking: PropTypes.array,
+  time: PropTypes.number,
+  caloriesCount: PropTypes.number
 };
 
 export default Prepares;
